@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScentTapp - Fragrance Vending</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #111; color: #fff; }
+    header { background: #000; padding: 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2rem; }
+    nav { text-align: center; margin-top: 1rem; }
+    nav a { color: #fff; text-decoration: none; margin: 0 1rem; font-weight: bold; }
+    section { padding: 2rem; }
+    .scent-card { background: #222; margin: 1rem 0; padding: 1rem; border-radius: 8px; }
+    .location-list a { display: block; color: #00e0ff; margin: 0.5rem 0; text-decoration: none; }
+    footer { background: #000; padding: 1rem; text-align: center; font-size: 0.9rem; }
+    .button { background: #00e0ff; color: #000; padding: 0.5rem 1rem; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ScentTapp</h1>
+    <p>Instant designer-inspired fragrances at your fingertips</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#locations">Locations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Where are you?</h2>
+    <p>Select your location below to see the scents available at that vending machine:</p>
+    <div class="location-list">
+      <a href="#mens_nightclub">Nightclub – Men’s Room</a>
+      <a href="#shopping_mall">Shopping Mall</a>
+      <a href="#airport">Airport</a>
+      <a href="#gym">Gym</a>
+    </div>
+  </section>
+
+  <section id="mens_nightclub">
+    <h2>Nightclub – Men’s Room</h2>
+    <div class="scent-card">Wild Signal – Fresh, clean, powerful (inspired by Dior Sauvage)</div>
+    <div class="scent-card">Ocean Drive – Cool and aquatic (inspired by Bleu de Chanel)</div>
+    <div class="scent-card">Gold Hit – Rich and spicy (inspired by 1 Million)</div>
+    <div class="scent-card">Night Code – Dark and seductive (inspired by Armani Code)</div>
+    <div class="scent-card">Legacy Fuel – Sharp and woody (inspired by Invictus)</div>
+    <div class="scent-card">Aqua Mode – Crisp and fresh (inspired by Acqua di Gio)</div>
+    <button class="button" onclick="window.location.href='#home'">Back to All Locations</button>
+  </section>
+
+  <section id="shopping_mall">
+    <h2>Shopping Mall</h2>
+    <div class="scent-card">Rose Crush – Soft, floral, feminine</div>
+    <div class="scent-card">Velvet Rush – Warm, amber, sexy</div>
+    <div class="scent-card">Citrus Pop – Bright, juicy, energizing</div>
+    <button class="button" onclick="window.location.href='#home'">Back to All Locations</button>
+  </section>
+
+  <section id="airport">
+    <h2>Airport</h2>
+    <p>Coming soon...</p>
+    <button class="button" onclick="window.location.href='#home'">Back to All Locations</button>
+  </section>
+
+  <section id="gym">
+    <h2>Gym</h2>
+    <p>Coming soon...</p>
+    <button class="button" onclick="window.location.href='#home'">Back to All Locations</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact / Partner With Us</h2>
+    <p>Email: <a href="mailto:scenttapp@outlook.com" style="color:#00e0ff;">scenttapp@outlook.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/scenttapp" style="color:#00e0ff;">@scenttapp</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 ScentTapp. All rights reserved.
+  </footer>
+</body>
+</html>
