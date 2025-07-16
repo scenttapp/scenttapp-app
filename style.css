@@ -32,44 +32,34 @@ h1, h2 {
   border-bottom: 1px solid #222;
 }
 
-.featured-scent h1 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
+/* Inspired by text */
 .inspired {
   font-style: italic;
   color: #ccc;
+  margin-top: 5px;
 }
 
-/* Location prompt */
-.location-select {
-  padding: 20px;
-  text-align: center;
-}
-
-.location-select h2 {
-  color: #f0c040;
-}
-
-/* Navigation buttons */
+/* Navigation Buttons */
 nav {
-  text-align: center;
-  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 1.5rem 0;
 }
 
 nav a {
-  color: #fff;
-  background: #111;
-  border: 1px solid #f0c040;
-  padding: 10px 20px;
-  margin: 5px;
+  background-color: transparent;
+  border: 2px solid #f0c040;
+  color: #f0c040;
+  padding: 10px 18px;
   text-decoration: none;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s ease;
 }
 
 nav a:hover {
-  background: #f0c040;
+  background-color: #f0c040;
   color: #000;
 }
