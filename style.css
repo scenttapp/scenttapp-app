@@ -1,57 +1,79 @@
 body {
+  margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f9f9f9;
-  color: #111;
+  background-color: #0b0b0b;
+  color: #f5f5f5;
+  padding: 0;
+}
+
+header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+main {
   padding: 2rem;
 }
 
-.location h1 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.scent {
-  background-color: #222;
-  color: #fff;
-  padding: 1rem;
+.featured-scent {
+  background: #1a1a1a;
+  border-left: 6px solid #00e0ff;
+  padding: 1.5rem;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-.scent h2 {
-  color: #FFD700;
-  margin: 0 0 0.3rem 0;
+.featured-scent h1 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
 }
 
-.inspired {
-  color: #ccc;
+.featured-scent .inspired {
   font-style: italic;
+  color: #ccc;
+  font-size: 0.95rem;
 }
 
-a {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #00e0ff;
-  color: #000;
-  border-radius: 6px;
-  text-decoration: none;
+.location-select h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.location-select ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.location-select li {
+  margin-bottom: 0.8rem;
+}
+
+.location-select a {
+  color: #00e0ff;
   font-weight: bold;
+  text-decoration: none;
 }
-@media (max-width: 600px) {
-  body {
-    padding: 1rem;
-  }
 
-  .scent {
-    font-size: 0.95rem;
-  }
-
-  a {
-    width: 100%;
-    text-align: center;
-  }
-}
-a:hover {
-  background-color: #00bcd4;
+.location-select a:hover {
+  text-decoration: underline;
 }
