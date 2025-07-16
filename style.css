@@ -83,3 +83,19 @@ nav a:hover {
   color: gold;
   text-decoration: underline;
 }
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.social-links a {
+  color: #ffd700;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
