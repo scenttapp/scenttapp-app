@@ -65,3 +65,21 @@ nav a:hover {
   background-color: #f0c040;
   color: #000;
 }
+/* Contact Page Styling */
+.hero {
+  text-align: center;
+  color: gold;
+  padding: 2rem 1rem;
+}
+
+.contact-info {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+
+.contact-info a {
+  color: gold;
+  text-decoration: underline;
+}
