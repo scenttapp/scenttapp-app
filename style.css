@@ -38,3 +38,20 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .scent {
+    font-size: 0.95rem;
+  }
+
+  a {
+    width: 100%;
+    text-align: center;
+  }
+}
+a:hover {
+  background-color: #00bcd4;
+}
