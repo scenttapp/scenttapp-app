@@ -218,3 +218,35 @@ footer {
   background: #a166ff;
   color: #fff;
 }
+.mist-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, transparent 70%);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 9999;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.mist-overlay.show {
+  opacity: 1;
+  animation: mistEffect 1.2s ease forwards;
+}
+
+@keyframes mistEffect {
+  0% {
+    opacity: 0;
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1) translateY(-10px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3) translateY(-30px);
+  }
+}
