@@ -244,3 +244,41 @@ footer {
     filter: blur(4px);
   }
 }
+/* Fullscreen Mist Spray Animation */
+.mist-spray {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(0, 191, 255, 0.3) 10%, rgba(0, 191, 255, 0.1) 30%, transparent 70%);
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  z-index: 9999;
+  transition: opacity 1.6s ease;
+}
+
+.mist-spray.active {
+  opacity: 1;
+  animation: smoothMist 1.6s ease forwards;
+}
+
+@keyframes smoothMist {
+  0% {
+    opacity: 0;
+    transform: scale(1) translateY(0);
+  }
+  40% {
+    opacity: 0.9;
+    transform: scale(1.05) translateY(-10px);
+  }
+  70% {
+    opacity: 0.6;
+    transform: scale(1.1) translateY(-30px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.15) translateY(-50px);
+  }
+}
