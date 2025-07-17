@@ -27,14 +27,29 @@
   </section>
 
   <section class="section">
-    <h2>Explore ScentTapp Locations</h2>
-    <div class="menu-buttons">
-      <a href="nightclub.html" class="location-btn">Nightclub</a>
-      <a href="mall.html" class="location-btn">Shopping Mall</a>
-      <a href="airport.html" class="location-btn">Airport</a>
-      <a href="gym.html" class="location-btn">Gym</a>
-    </div>
-  </section>
+  <h2>Explore ScentTapp Locations</h2>
+  <div class="menu-buttons">
+    <button class="location-btn" onclick="mistTransition('nightclub.html')">Nightclub</button>
+    <button class="location-btn" onclick="mistTransition('mall.html')">Shopping Mall</button>
+    <button class="location-btn" onclick="mistTransition('airport.html')">Airport</button>
+    <button class="location-btn" onclick="mistTransition('gym.html')">Gym</button>
+  </div>
+</section>
+
+<!-- Mist animation overlay -->
+<div class="mist-overlay" id="mist"></div>
+
+<!-- JavaScript for mist transition -->
+<script>
+  function mistTransition(targetPage) {
+    const mist = document.getElementById('mist');
+    mist.classList.add('show');
+
+    setTimeout(() => {
+      window.location.href = targetPage;
+    }, 1200); // Wait for animation to finish
+  }
+</script>
 
   <footer>
     <p>© 2025 ScentTapp. All rights reserved.</p>
