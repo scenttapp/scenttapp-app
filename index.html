@@ -36,23 +36,20 @@
     </div>
   </section>
 
-  <!-- Mist spray effect -->
+  <!-- Full-screen mist spray overlay -->
   <div id="mist-spray" class="mist-spray"></div>
 
   <footer>
     <p>© 2025 ScentTapp. All rights reserved.</p>
   </footer>
 
-  <!-- JavaScript for spray -->
   <script>
     function triggerMist(targetPage) {
       const mist = document.getElementById('mist-spray');
       mist.classList.add('active');
-
-      // After animation, go to next page
       setTimeout(() => {
         window.location.href = targetPage;
-      }, 1600);
+      }, 1600); // match animation time
     }
   </script>
 </body>
