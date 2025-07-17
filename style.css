@@ -241,3 +241,43 @@ footer {
     transform: scale(1.15) translateY(-50px);
   }
 }
+/* 🌫️ Full-Screen Blue Mist Spray Animation */
+.mist-spray {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(0,191,255,0.2) 10%, rgba(0,191,255,0.1) 30%, transparent 70%);
+  backdrop-filter: blur(25px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.mist-spray.active {
+  animation: fullScreenMist 1.6s ease forwards;
+}
+
+@keyframes fullScreenMist {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+    filter: blur(2px);
+  }
+  35% {
+    opacity: 0.9;
+    transform: scale(1.05);
+    filter: blur(4px);
+  }
+  70% {
+    opacity: 0.6;
+    transform: scale(1.1);
+    filter: blur(6px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+    filter: blur(10px);
+  }
+}
