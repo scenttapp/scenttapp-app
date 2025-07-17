@@ -1,4 +1,4 @@
-/* Reset and base */
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -76,7 +76,6 @@ nav a:hover {
   color: #a166ff;
   margin-bottom: 20px;
 }
-
 /* Location Buttons */
 .menu-buttons {
   display: flex;
@@ -90,11 +89,12 @@ nav a:hover {
   background: #1a1a2e;
   border: 2px solid #00bfff;
   color: #00bfff;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s;
+  border: none;
 }
 
 .location-btn:hover {
@@ -131,15 +131,6 @@ button {
 
 button:hover {
   background: #a166ff;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #000;
-  font-size: 0.9rem;
-  color: #666;
 }
 
 /* Scent Product Grid */
@@ -202,92 +193,54 @@ footer {
 .product-card button:hover {
   background: #a166ff;
 }
-.location-btn {
-  background: #00bfff;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  border: none;
-  display: inline-block;
-  transition: background 0.3s;
-}
 
-.location-btn:hover {
-  background: #a166ff;
-  color: #fff;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  font-size: 0.9rem;
+  color: #666;
 }
-{
-    opacity: 0;
-    transform: scale(1) translateY(0);
-  }
-  30% {
-    opacity: 0.85;
-    transform: scale(1.05) translateY(-5px);
-  }
-  60% {
-    opacity: 0.6;
-    transform: scale(1.1) translateY(-20px);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.2) translateY(-40px);
-  }
-}
-
-@keyframes sprayMistFull {
-  0% {
-    opacity: 0;
-    transform: scale(1);
-  }
-  30% {
-    opacity: 0.4;
-    transform: scale(1.05);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-}
-/* Mist Spray Animation - Fullscreen Foggy Effect */
-/* Mist Spray Animation - Fullscreen Blue Fog Effect */
+/* Mist Spray Overlay */
 .mist-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(circle, rgba(0, 191, 255, 0.15) 20%, rgba(0, 191, 255, 0.05) 40%, transparent 70%);
-  backdrop-filter: blur(12px);
-  pointer-events: none;
+  background: radial-gradient(circle, rgba(0, 191, 255, 0.2) 20%, rgba(0, 191, 255, 0.05) 50%, transparent 80%);
+  backdrop-filter: blur(14px);
   opacity: 0;
+  pointer-events: none;
   z-index: 9999;
 }
 
+/* Triggered when button clicked */
 .mist-overlay.show {
-  animation: burstSpray 1.5s ease-out forwards;
+  animation: burstMistSpray 1.5s ease-out forwards;
 }
 
-@keyframes burstSpray {
+/* Mist Animation Keyframes */
+@keyframes burstMistSpray {
   0% {
     opacity: 0;
-    transform: scale(0.8);
-    filter: blur(2px);
+    transform: scale(0.9);
+    filter: blur(1px);
   }
   30% {
     opacity: 0.8;
     transform: scale(1.05);
-    filter: blur(1px);
+    filter: blur(2px);
   }
   60% {
     opacity: 0.6;
     transform: scale(1.1);
-    filter: blur(2px);
+    filter: blur(3px);
   }
   100% {
     opacity: 0;
-    transform: scale(1.25);
+    transform: scale(1.2);
     filter: blur(4px);
   }
 }
