@@ -202,3 +202,19 @@ footer {
 .product-card button:hover {
   background: #a166ff;
 }
+.location-btn {
+  background: #00bfff;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.location-btn:hover {
+  background: #a166ff;
+  color: #fff;
+}
