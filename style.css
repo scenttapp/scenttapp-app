@@ -231,25 +231,33 @@ footer {
   z-index: 9999;
 }
 
-.mist-overlay.show {
-  animation: sprayMist 1s ease-out forwards;
+.mist-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.15) 0%, transparent 70%);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 9999;
 }
 
-@keyframes sprayMist {
+.mist-overlay.show {
+  animation: sprayMistFull 1.2s ease-out forwards;
+}
+
+@keyframes sprayMistFull {
   0% {
     opacity: 0;
-    height: 0px;
-    transform: translateX(-50%) scale(0.5) translateY(0);
+    transform: scale(1);
   }
   30% {
-    opacity: 0.7;
-    height: 200px;
-    transform: translateX(-50%) scale(1.2) translateY(-30px);
+    opacity: 0.4;
+    transform: scale(1.05);
   }
   100% {
-    opacity: 0;
-    height: 220px;
-    transform: translateX(-50%) scale(1.4) translateY(-80px);
+    opacity: 1;
+    transform: scale(1.2);
   }
 }
- 
