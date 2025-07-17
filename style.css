@@ -32,6 +32,8 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 10px;
 }
 
 nav a {
@@ -75,6 +77,31 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
+/* Location Buttons */
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.location-btn {
+  background: #1a1a2e;
+  border: 2px solid #00bfff;
+  color: #00bfff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.location-btn:hover {
+  background: #00bfff;
+  color: #0d0d1a;
+}
+
 /* Contact Form */
 form {
   display: flex;
@@ -114,6 +141,7 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+
 /* Scent Product Grid */
 .scent-lineup h2 {
   color: #00bfff;
