@@ -2,64 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ScentTapp – Coming Soon</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
+      background: radial-gradient(circle at center, #0d0d1a 0%, #000 100%);
       font-family: 'Inter', sans-serif;
-      background-color: #000;
-      color: #f0c040;
+      color: #fff;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      text-align: center;
+      align-items: center;
       height: 100vh;
-      overflow: hidden;
-      background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
+      text-align: center;
     }
 
-    .machine {
+    .logo {
       max-width: 220px;
-      margin-bottom: 30px;
-      filter: drop-shadow(0 0 20px rgba(0, 123, 255, 0.4));
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
+      font-size: 2.5rem;
       color: #f0c040;
-      margin: 0 0 10px;
+      margin: 0;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #ccc;
-      margin: 0 0 20px;
+      margin-top: 12px;
     }
 
-    .email {
-      font-size: 0.95rem;
-      color: #777;
-    }
-
-    .email a {
+    .glow {
       color: #f0c040;
-      text-decoration: none;
+      text-shadow: 0 0 10px #f0c040, 0 0 20px #f0c040;
     }
 
-    .email a:hover {
-      text-decoration: underline;
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.8rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <img src="https://raw.githubusercontent.com/scenttapp/scenttapp.github.io/main/images/machine-coming-soon.jpg" alt="ScentTapp Machine" class="machine">
-  <h1>ScentTapp</h1>
+  <img class="logo" src="https://raw.githubusercontent.com/scenttapp/scenttapp-app/main/assets/scenttapp-logo.png" alt="ScentTapp Logo">
+  <h1 class="glow">ScentTapp</h1>
   <p>Our scent experience is almost ready.<br>Coming Soon.</p>
-  <p class="email">Contact us: <a href="mailto:scenttapp@outlook.com">scenttapp@outlook.com</a></p>
+  <footer>© 2025 ScentTapp</footer>
 </body>
 </html>
