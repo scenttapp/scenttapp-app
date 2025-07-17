@@ -220,28 +220,38 @@ footer {
 }
 .mist-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, transparent 70%);
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 0px;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.4) 0%, transparent 60%);
   pointer-events: none;
   opacity: 0;
   z-index: 9999;
-  transition: opacity 0.4s ease-in-out;
 }
 
 .mist-overlay.show {
-  opacity: 1;
-  animation: mistEffect 1.2s ease forwards;
+  animation: sprayMist 1s ease-out forwards;
 }
 
-@keyframes mistEffect {
+@keyframes sprayMist {
   0% {
     opacity: 0;
-    transform: scale(1) translateY(0);
+    height: 0px;
+    transform: translateX(-50%) scale(0.5) translateY(0);
   }
-  50% {
+  30% {
+    opacity: 0.7;
+    height: 200px;
+    transform: translateX(-50%) scale(1.2) translateY(-30px);
+  }
+  100% {
+    opacity: 0;
+    height: 220px;
+    transform: translateX(-50%) scale(1.4) translateY(-80px);
+  }
+}
     opacity: 0.6;
     transform: scale(1.1) translateY(-10px);
   }
