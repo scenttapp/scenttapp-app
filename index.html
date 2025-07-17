@@ -1,63 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ScentTapp – Fragrance On Demand</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header with logo -->
   <header>
-    <img src="logo.png" alt="ScentTapp Logo" />
+    <img src="images/scenttapp-logo.png" alt="ScentTapp Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Fragrance Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="nightclub.html">Nightclub</a>
-    <a href="gym.html">Gym</a>
-    <a href="airport.html">Airport</a>
-    <a href="mall.html">Mall</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <!-- Hero Title -->
-  <section class="hero">
-    <h1>Fragrance On Demand</h1>
-    <p>Designer-inspired scents, applied instantly.</p>
+  <section id="home" class="hero">
+    <h1>ScentTapp</h1>
+    <p>Fragrance. Instantly. Anywhere.</p>
   </section>
 
-  <!-- Featured Fragrances -->
-  <section class="featured-scent">
-    <h2>Men's Fragrances</h2>
-
-    <!-- Scent Card Example -->
-    <div class="scent-card">
-      <img src="wild-signal.jpg" alt="Wild Signal" style="max-width: 100px; margin: 10px auto;" />
-      <h3>Wild Signal</h3>
-      <p class="inspired">Inspired by Dior Sauvage</p>
-      <p>Rugged and spicy, for unforgettable nights out.</p>
-    </div>
-
-    <!-- Add more scents here -->
-    <!--
-    <div class="scent-card">
-      <img src="..." />
-      <h3>Ocean Drive</h3>
-      <p class="inspired">Inspired by Bleu de Chanel</p>
-      <p>Fresh, aquatic, and endlessly confident.</p>
-    </div>
-    -->
+  <section id="menu" class="section">
+    <h2>Fragrance Menu</h2>
+    <p>Coming soon. Choose your scent by location.</p>
   </section>
 
-  <!-- Footer / Social -->
-  <div class="social-links">
-    <p>Follow us on</p>
-    <a href="#">Instagram</a>
-    <a href="#">TikTok</a>
-  </div>
+  <section id="about" class="section">
+    <h2>About ScentTapp</h2>
+    <p>ScentTapp is a fragrance vending experience built for nightclubs, gyms, airports and more. Premium designer-inspired scents, dispensed instantly.</p>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:scenttapp@outlook.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 ScentTapp. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
