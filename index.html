@@ -2,37 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ScentTapp – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
       background-color: #000;
       color: #f0c040;
-      font-family: Arial, sans-serif;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
       text-align: center;
-      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
     }
-    img {
-      max-width: 180px;
-      margin-bottom: 20px;
+
+    .machine {
+      max-width: 220px;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 20px rgba(0, 123, 255, 0.4));
     }
+
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #f0c040;
+      margin: 0 0 10px;
     }
+
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      color: #ccc;
+      margin: 0 0 20px;
+    }
+
+    .email {
+      font-size: 0.95rem;
+      color: #777;
+    }
+
+    .email a {
+      color: #f0c040;
+      text-decoration: none;
+    }
+
+    .email a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="ScentTapp Logo">
+  <img src="https://raw.githubusercontent.com/scenttapp/scenttapp.github.io/main/images/machine-coming-soon.jpg" alt="ScentTapp Machine" class="machine">
   <h1>ScentTapp</h1>
   <p>Our scent experience is almost ready.<br>Coming Soon.</p>
+  <p class="email">Contact us: <a href="mailto:scenttapp@outlook.com">scenttapp@outlook.com</a></p>
 </body>
 </html>
