@@ -3,57 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ScentTapp – Coming Soon</title>
+  <title>ScentTapp – Fragrance On Demand</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background: radial-gradient(circle at center, #0d0d1a 0%, #000 100%);
-      font-family: 'Inter', sans-serif;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
+      box-sizing: border-box;
     }
 
-    .logo {
-      max-width: 220px;
-      margin-bottom: 20px;
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(145deg, #0b0f1a, #111325);
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 180px;
+      margin-bottom: 30px;
     }
 
     h1 {
       font-size: 2.5rem;
-      color: #f0c040;
-      margin: 0;
+      color: #70b0ff;
+      text-shadow: 0 0 10px #265cfc;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.1rem;
-      color: #ccc;
-      margin-top: 12px;
+      font-size: 1.2rem;
+      color: #b0b6ff;
+      text-shadow: 0 0 5px #222860;
+      max-width: 600px;
+      margin: 0 auto 40px;
     }
 
-    .glow {
-      color: #f0c040;
-      text-shadow: 0 0 10px #f0c040, 0 0 20px #f0c040;
+    .btn-container {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #265cfc;
+      color: white;
+      font-size: 1rem;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      box-shadow: 0 0 15px #1c4be4;
+      margin: 10px;
+    }
+
+    .btn:hover {
+      background: #1c4be4;
     }
 
     footer {
-      position: absolute;
-      bottom: 15px;
-      font-size: 0.8rem;
-      color: #555;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <img class="logo" src="https://raw.githubusercontent.com/scenttapp/scenttapp-app/main/assets/scenttapp-logo.png" alt="ScentTapp Logo">
-  <h1 class="glow">ScentTapp</h1>
-  <p>Our scent experience is almost ready.<br>Coming Soon.</p>
-  <footer>© 2025 ScentTapp</footer>
+  <header>
+    <img src="logo.png" alt="ScentTapp Logo">
+  </header>
+
+  <h1>Welcome to ScentTapp</h1>
+  <p>Fragrance on demand. Spray your favourite inspired scent instantly from our sleek, modern machines.</p>
+
+  <div class="btn-container">
+    <a href="nightclub.html" class="btn">Nightclub</a>
+    <a href="mall.html" class="btn">Shopping Mall</a>
+    <a href="gym.html" class="btn">Gym</a>
+    <a href="airport.html" class="btn">Airport</a>
+  </div>
+
+  <footer>
+    &copy; 2025 ScentTapp. All rights reserved.
+  </footer>
 </body>
 </html>
