@@ -202,49 +202,7 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
-/* Mist Spray Overlay */
-.mist-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: radial-gradient(circle, rgba(0, 191, 255, 0.2) 20%, rgba(0, 191, 255, 0.05) 50%, transparent 80%);
-  backdrop-filter: blur(14px);
-  opacity: 0;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-/* Triggered when button clicked */
-.mist-overlay.show {
-  animation: burstMistSpray 1.5s ease-out forwards;
-}
-
-/* Mist Animation Keyframes */
-@keyframes burstMistSpray {
-  0% {
-    opacity: 0;
-    transform: scale(0.9);
-    filter: blur(1px);
-  }
-  30% {
-    opacity: 0.8;
-    transform: scale(1.05);
-    filter: blur(2px);
-  }
-  60% {
-    opacity: 0.6;
-    transform: scale(1.1);
-    filter: blur(3px);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.2);
-    filter: blur(4px);
-  }
-}
-/* Fullscreen Mist Spray Animation */
+/* ✨ Full-Screen Blue Mist Spray Effect */
 .mist-spray {
   position: fixed;
   top: 0;
@@ -252,15 +210,16 @@ footer {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  background: radial-gradient(circle at center, rgba(0, 191, 255, 0.3) 10%, rgba(0, 191, 255, 0.1) 30%, transparent 70%);
+  background: radial-gradient(circle at center,
+    rgba(0,191,255,0.3) 10%,
+    rgba(0,191,255,0.1) 30%,
+    transparent 70%);
   backdrop-filter: blur(20px);
   opacity: 0;
   z-index: 9999;
-  transition: opacity 1.6s ease;
 }
 
 .mist-spray.active {
-  opacity: 1;
   animation: smoothMist 1.6s ease forwards;
 }
 
