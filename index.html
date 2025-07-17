@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ScentTapp</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
   <header>
@@ -47,9 +47,11 @@
     function triggerMist(targetPage) {
       const mist = document.getElementById('mist-spray');
       mist.classList.add('active');
+      mist.style.display = 'block';
+
       setTimeout(() => {
         window.location.href = targetPage;
-      }, 1600); // match animation time
+      }, 1600); // Match animation duration
     }
   </script>
 </body>
